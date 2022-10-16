@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+}
+
+.figure1 {
+    position: absolute;
+    width: 1665px;
+    height: 40px;
+    left: 0px;
+    top: 0px;
+
+    background: #0E77AF;
+}
+
+.figure1_1 {
+position: absolute;
+width: 92px;
+height: 18px;
+left: 245px;
+top: 10px;
+
+background: #D9D9D9;
+}
+
+.figure1_2 {
+position: absolute;
+width: 107px;
+height: 14px;
+left: 1310px;
+top: 12px;
+
+background: #D9D9D9;
+}
+
+
+
+.figure2 {
+position: absolute;
+width: 87px;
+height: 81px;
+left: 240px;
+top: 59px;
+
+background: #FF44EC;
+}
+
+.figure3 {
+position: absolute;
+width: 634px;
+height: 24px;
+left: 507px;
+top: 88px;
+
+background: #4D9FFF;
+}
+
+.figure4 {
+position: absolute;
+width: 226px;
+height: 38px;
+left: 1191px;
+top: 77px;
+
+background: #FFDA56;
+}
+.figure5 {
+position: absolute;
+width: 1665px;
+height: 647px;
+left: 0px;
+top: 159px;
+}
+
+.figure6 {
+position: absolute;
+width: 27px;
+height: 51px;
+left: 82px;
+top: 474px;
+
+background: #D9D9D9;
+}
+.figure7 {
+position: absolute;
+width: 27px;
+height: 51px;
+left: 1538px;
+top: 474px;
+
+background: #D9D9D9;
+}
+.figure8 {
+position: absolute;
+width: 173px;
+height: 32px;
+left: 832px;
+top: 312px;
+
+background: #FF2976;
+}
+.figure9 {
+position: absolute;
+width: 455px;
+height: 60px;
+left: 832px;
+top: 372px;
+
+background: #FF2976;
+}
+
+.figure10 {
+position: relative;
+width: 1665px;
+height: 647px;
+left: 0px;
+top: 159px;
+
+background-color: white;
+}
+
+
+.figure11 {
+position: absolute;
+width: 286px;
+height: 73px;
+left: 832px;
+top: 597px;
+
+background: #4FFF75;
+}

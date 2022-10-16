@@ -1,0 +1,102 @@
+body {
+    background-color: black;
+}
+
+.figure1 {
+position: absolute;
+width: 53px;
+height: 26px;
+left: 248px;
+top: 30px;
+
+background: #D9D9D9;
+}
+
+
+
+.figure2 {
+position: absolute;
+width: 81px;
+height: 26px;
+left: 457px;
+top: 30px;
+
+background: #D9D9D9;
+}
+
+.figure3 {
+position: absolute;
+width: 64px;
+height: 26px;
+left: 684px;
+top: 30px;
+
+background: #D9D9D9;
+}
+
+.figure4 {
+position: absolute;
+width: 72px;
+height: 26px;
+left: 892px;
+top: 30px;
+
+background: #D9D9D9;
+}
+.figure5 {
+position: absolute;
+width: 82px;
+height: 26px;
+left: 1116px;
+top: 32px;
+
+background: #D9D9D9;
+}
+
+.figure6 {
+position: absolute;
+width: 942px;
+height: 0px;
+left: 252px;
+top: 86px;
+
+border: 1px solid white;
+}
+.figure7 {
+position: absolute;
+width: 126px;
+height: 101px;
+left: 249px;
+top: 126px;
+
+background: #FB3EFF;
+}
+.figure8 {
+position: absolute;
+width: 162px;
+height: 45px;
+left: 665px;
+top: 182px;
+
+background: #FF0D72;
+}
+.figure9 {
+position: absolute;
+width: 24px;
+height: 70px;
+left: 1173px;
+top: 157px;
+
+background: #0ACF83;
+}
+
+.figure10 {
+position: absolute;
+width: 946px;
+height: 389px;
+left: 248px;
+top: 275px;
+
+background: #2E43FF;
+}
+
