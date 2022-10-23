@@ -1,0 +1,36 @@
+body {
+    background-color:  #2D283E;
+}
+
+thead {
+    font-size: 20pt;
+    color: #802BB1;
+}
+
+tbody {
+    color: #D1D7E0;
+}
+
+td, th {
+    border: 1px solid #564F6F;
+    padding: 10px;
+}
+
+tfoot{
+    color: #4C495D;
+    font-weight: bold;
+}
+
+.Ios .phone::before {
+    content: "🍎";
+}
+
+.Android .phone::before {
+    content: "🤖";
+}
+
+tbody .price::before{
+    content: "💰";
+}
+
+

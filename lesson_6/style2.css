@@ -1,0 +1,42 @@
+.one { 
+    width: 100px;
+    height: 100px;
+    background-color: #802BB1;
+}
+
+.two {
+    width: 200px;
+    height: 200px;
+    background-color: #564F6F;
+}
+
+.two, .one{
+    display: inline-block;
+}
+
+p {
+    display: inline;
+}
+
+.second {
+    width: 200px;
+    height: 200px;
+    background-color: #802BB1;
+    margin-bottom: 20px;
+}
+
+.third { 
+    width: 200px;
+    height: 200px;
+    background-color: #564F6F;
+    margin-top: 20px;
+}
+
+img {
+    width: 250px;
+    float: right;
+}
+
+.float{
+    width: 300px;
+}
