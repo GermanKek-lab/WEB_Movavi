@@ -85,6 +85,7 @@ h1{
     font-size: 17pt;
     font-family: 'Pacifico', cursive;
     color: #BAB2B5;
+    margin-top: 20px;
     
 }
 
@@ -105,5 +106,46 @@ h1{
     color: #EEE2DC;
     font-family: 'Pacifico', cursive;
     font-size: 25pt;
-    padding: 100px 0;
+    padding-top: 100px;
+}
+
+.prize-icon{
+    font-size: 35px;
+    display: block;
+}
+
+.prize-list{
+    display: inline-block;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    width: 320px;
+}
+
+.prize-list > h3{
+    text-align: center;
+}
+
+ol {
+    list-style-type: none;
+    padding-left: 80px;
+    font-size: 24px;
+    text-align: left;
+}
+
+/*последняя секция*/
+
+.last_sec{
+    width: 70%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.reader-img{
+    border-radius: 50%;
+    float: right;
+}
+
+.last-words{
+    font-size: 25px;
+    line-height: 39px;
 }
