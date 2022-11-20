@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(160deg, #7777aa 0%, #333366 60%, #000022 120%) no-repeat;
+    padding: 150px 0;   
+}
+
+.article {
+    width: 60%;
+    margin: auto;
+    background-color: whitesmoke;
+    border: 7px solid #8899CC;
+    padding: 60px 100px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.cosmos {
+    position: absolute;
+    top: -90px;
+}
+
+.text {
+    height: 105px;
+    overflow: scroll;
+}
+
+.rocket {
+    position: absolute;
+    left: 40px;
+    bottom: 50%;
+    transform: rotate(45deg);
+}
+
+.heading {
+    display: block;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #444466;
+    padding: 20px 0 40px;
+    position: sticky;
+    top: 0;
+}
+
+.scheme {
+    padding: 0 100px;
+}
+
+.spasesuit-scheme {
+    display: inline-block;
+    width: 600px;
+    position: relative;
+}
+
+.spasesuit {
+    width: 100%;
+}
+
+.mark {
+    position: absolute;
+}
+
+.mark1 {
+    top: -30px;
+    left: 500px;
+}
+
+.mark2 {
+    top: 33%;
+    left: 350px;
+}
+
+.mark3 {
+    top: 33%;
+    left: 0;
+}
+
+.mark4 {
+    top: 30px;
+    left: 350px;
+}
+
+.mark5 {
+    bottom: 217px;
+    right: 210px;
+}
+
+.items {
+    float: right;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 50px;
+    color: #bbaacc;
+    margin-right: 100px;
+}
+
+li {
+    padding-top: 40px;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+li::before {
+    display: inline-block;
+    position: absolute;
+    width: 46px;
+    height: 46px;
+    left: -47px;
+}
+
+li:nth-child(1)::before {
+    content: url(img/mark1.svg);
+    vertical-align: middle;
+}
+
+li:nth-child(2)::before {
+    content: url(img/mark2.svg);
+    vertical-align: middle;
+}
+
+li:nth-child(3)::before {
+    content: url(img/mark3.svg);
+    vertical-align: middle;
+}
+
+li:nth-child(4)::before {
+    content: url(img/mark4.svg);
+    vertical-align: middle;
+}
+
+li:nth-child(5)::before {
+    content: url(img/mark5.svg);
+    vertical-align: middle;
+}
