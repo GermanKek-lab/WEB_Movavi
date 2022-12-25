@@ -203,3 +203,115 @@ q {
     line-height: 28px;
     padding: 20px 20px 20px 30px;
 }
+
+
+
+.game-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 150px;
+}
+
+.game-box:nth-child(even) { 
+    flex-direction: row-reverse;
+}
+
+.game-box>div, .give-box>img { 
+    width: 45%;
+}
+
+.game-box h3, .game-box h4 {
+    margin-bottom: 18px;
+}
+
+.more-btn {
+    width: 190px;
+    height: 95px;
+    margin-top: 60px;
+    padding: 25px;
+    padding-left: 30px;
+    font-size: 25px;
+    position: absolute;
+}
+
+.game-box img{
+    width: 600px;
+    height: 600px;
+}
+
+.more-btn::after {
+    content: url("img/arrow.png");
+}
+
+.projects {
+    background-color: #EEE;
+    padding: 100px 0 100px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-card {
+    width: 30%;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.project-card h3{
+    font-size: 40px;
+}
+
+.project-card img {
+    width: 100%;
+    margin-bottom: 22px;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*Вакансии*/
+
+.vacancy {
+    margin-bottom: 50px;
+}
+
+.vacancy h2{
+    margin-bottom: 50px;
+}
+
+.vacancy-conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(190px, auto);
+    gap: 24px;
+}
+
+.vacancy-box {
+    background-color: #f5f5f5;
+    position: relative;
+    cursor: pointer;
+}
+
+.vacancy-box:hover {
+    background-color: #CE0002;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.vacancy-box h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    max-width: 300px;
+}
