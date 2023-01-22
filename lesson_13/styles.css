@@ -1,6 +1,6 @@
 :root {
     --btn-red: #CE0002;
-    --yellow: #FFFF2F;
+    --yellow: #FFEF2F;
 }
 
 * {
@@ -11,6 +11,11 @@
 
 body {
     font-family: 'Montserrat';
+}
+
+.logo {
+    position: fixed;
+    z-index: 10;
 }
 
 /* header */
@@ -28,7 +33,7 @@ a {
 }
 
 .active-link {
-    color: var(--btn-red);
+    color: #FF0000;
 }
 
 nav a {
@@ -39,7 +44,7 @@ nav a {
 }
 
 .btn {
-    background: #CE0002;
+    background: var(--btn-red);
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
@@ -80,7 +85,6 @@ q {
     position: relative;
     margin-bottom: 100px;
     padding-bottom: 100px;
-    height: 100vh;
 }
 
 .header::before {
@@ -114,8 +118,7 @@ q {
 .team {
     position: relative;
     width: 85%;
-    margin: auto;
-    margin-top: 150px;
+    margin: 150px auto;
     padding-top: 150px;
 }
 
@@ -154,17 +157,24 @@ q {
 }
 
 .member img {
-    width: 200px;
+    width: 180px;
+    height: 180px;
+    background-position: center;
+    background-size: cover;
 }
 
 .member h3 {
     font-weight: 700;
     font-size: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .member h4 {
-    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.G-red {
+    color: var(--btn-red);
 }
 
 .footer img {
@@ -172,26 +182,20 @@ q {
 }
 
 .footer {
-    background-color: #e1e1e1;
+    background-color: rgba(254, 254, 254, 0.8);
+    background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #fefefe 20px ), repeating-linear-gradient( #FFEF2F55, #FFEF2F );
     padding: 18px 25px;
-    margin-top: 10px;
     display: flex;
     /* justify-content - выравнивание по основной оси */
-    justify-content: space-between; 
-    /* align-items - выравнивание аобочной оси*/
+    justify-content: space-between;  
+    /* align-items - выравнивание побочной оси */
     align-items: center;
+
+    color: #5b5b5b;
 }
 
-.inc::before {
-    content: "@";
-    vertical-align: middle;
-}
-
-.team {
-    position: relative;
-    width: 80%;
-    margin: 150px auto;
-    padding-top: 150px;
+.footer a {
+    font-size: 15px;
 }
 
 .game-header-btn {
@@ -200,26 +204,31 @@ q {
     height: 160px;
     font-weight: 700;
     font-size: 22px;
-    line-height: 28px;
-    padding: 20px 20px 20px 30px;
+    line-height: 30px;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
 }
 
+
+/* GAMES PAGE */
 
 
 .game-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 24px;
-    line-height: 32px;
-    margin-bottom: 150px;
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   margin-bottom: 150px;
 }
 
-.game-box:nth-child(even) { 
+.game-box:nth-child(even) {
     flex-direction: row-reverse;
 }
 
-.game-box>div, .give-box>img { 
+.game-box>div, .game-box>img {
     width: 45%;
 }
 
@@ -233,28 +242,25 @@ q {
     margin-top: 60px;
     padding: 25px;
     padding-left: 30px;
-    font-size: 25px;
-    position: absolute;
+    font-size: 22px;
+    position: relative;
 }
 
-.game-box img{
-    width: 600px;
-    height: 600px;
-}
-
-.more-btn::after {
-    content: url("img/arrow.png");
+.more-btn:after {
+    content: url(img/arrow.png);
+    display: block;
+    margin: 10px;
 }
 
 .projects {
     background-color: #EEE;
-    padding: 100px 0 100px;
+    padding: 100px 0 60px;
 }
 
 .project-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start; 
 }
 
 .project-card {
@@ -265,6 +271,8 @@ q {
 
 .project-card h3{
     font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
 }
 
 .project-card img {
@@ -276,34 +284,46 @@ q {
     background-size: cover;
 }
 
+.project-btn {
+    padding: 20px;
+    width: 220px;
+    height: 70px;
+    font-size: 22px;
+    margin-top: 20px;
+    position: relative;
+}
 
-/*Вакансии*/
+.project-btn:after {
+    content: url(img/arrow.png);
+}
 
+
+/* Vacancy page  */
 .vacancy {
     margin-bottom: 50px;
-}
-
-.vacancy h2{
+  }
+   
+.vacancy h2 {
     margin-bottom: 50px;
-}
-
-.vacancy-conteiner {
+  }
+   
+.vacancy-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(190px, auto);
+    grid-auto-rows: minmax(190px, auto);
     gap: 24px;
-}
+  }
 
 .vacancy-box {
-    background-color: #f5f5f5;
+    background-color: #F5F5F5;
     position: relative;
     cursor: pointer;
+    transition: all 0.5s ease;
 }
 
 .vacancy-box:hover {
-    background-color: #CE0002;
-    color: whitesmoke;
-    transition: 0.5s;
+    background-color: var(--btn-red);
+    color:white;
 }
 
 .vacancy-box h3 {
@@ -315,3 +335,150 @@ q {
     bottom: 20px;
     max-width: 300px;
 }
+
+.vacancy-box:nth-child(1) {
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.vacancy-box:nth-child(2) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.vacancy-box:nth-child(5) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+/* NEWS PAGE */
+.news-cards {
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+
+.news-icons {
+    width: 75px;
+    margin-bottom: 10px;
+}
+
+.news-cards .item {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.news-cards .text {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+
+.news-develop {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f7b2df, #d095bb);
+    box-shadow:  7px 7px 14px #b985a6,
+                -7px -7px 14px #ffc7fa;
+}
+
+.news-develop-span {
+    color: #67194c;
+}
+
+.news-develop img {
+    filter: invert(19%) sepia(30%) saturate(4405%) hue-rotate(294deg) brightness(88%) contrast(95%);
+}
+
+
+
+.news-industry {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #b2f7ca, #95d0aa);
+    box-shadow:  7px 7px 14px #85b997,
+                -7px -7px 14px #c7ffe3;
+}
+
+.news-industry-span {
+    color: #155c2e;
+}
+
+.news-industry img {
+    filter: invert(30%) sepia(17%) saturate(1580%) hue-rotate(88deg) brightness(94%) contrast(100%);
+}
+
+
+
+
+.news-team {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #f7efb2, #d0c995);
+    box-shadow:  7px 7px 14px #b9b285,
+                -7px -7px 14px #ffffc7;
+}
+
+.news-team-span {
+    color: #5e5515;
+}
+
+.news-team img {
+    filter: invert(17%) sepia(98%) saturate(3663%) hue-rotate(59deg) brightness(87%) contrast(83%);
+}
+
+.glass {
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.news-text {
+    font-size: 24px;
+}
+
+hr {
+    margin: 50px 0;
+}
+
+.burger-menu {
+    width: 55px;
+    height: 55px;
+    border: 1px solid var(--btn-red);
+    display: none;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.burger-menu:hover {
+    transform: rotate(135deg);
+}
+
+.burger-menu>span {
+    display: block;
+    width: 70%;
+    height: 2px;
+    background-color: var(--btn-red);
+    margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
